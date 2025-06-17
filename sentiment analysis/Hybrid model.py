@@ -1,8 +1,3 @@
-### from google.colab import drive
-###drive.mount('/content/drive')
-
-### !pip install transformers scikit-learn optuna
-
 # 하이브리드 모델 감성 분석
 import os
 import torch

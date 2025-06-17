@@ -1,8 +1,3 @@
-### from google.colab import drive
-###drive.mount('/content/drive')
-
-### !pip install transformers scikit-learn
-
 # RoBERTa 단일 모델 감성 분석
 import os
 import torch

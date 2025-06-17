@@ -111,14 +111,14 @@
 
 ## 5. 기능 확장 TEST
 
-- Sonnet_Lora: `sonnet_generation_Lora_Peft.py` 실행
+- Sonnet_Lora:
 
-  - 실행 방법: `python sonnet_generation_Lora_Peft.py --use_gpu`
+  - 실행 방법: `!python sonnet_generation_Lora_Peft.py --use_gpu`
   - 출력 예시: (소네트 생성 결과 및 평가 로그)
 
 - 감성분석 하이브리드/단일모델:
   - RoBERTa.py (단일 RoBERTa)
-    - 실행 방법: `python sentiment_analysis/RoBERTa.py`
+    - 실행 방법: `!python sentiment_analysis/RoBERTa.py --use_gpu`
     - 출력 예시:
       ```
       Using device: cuda
@@ -128,7 +128,7 @@
       ...
       ```
   - XLNet.py (단일 XLNet)
-    - 실행 방법: `python sentiment_analysis/XLNet.py`
+    - 실행 방법: `!python sentiment_analysis/XLNet.py --use_gpu`
     - 출력 예시:
       ```
       Using device: cuda
@@ -138,7 +138,7 @@
       ...
       ```
   - Hybrid_model.py (RoBERTa + XLNet 앙상블)
-    - 실행 방법: `python sentiment_analysis/Hybrid_model.py`
+    - 실행 방법: `!python sentiment_analysis/Hybrid_model.py --use_gpu`
     - 출력 예시:
       ```
       Device: cuda
