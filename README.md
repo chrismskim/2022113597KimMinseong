@@ -14,7 +14,7 @@
 
 ---
 
-## 2. 파일 구조
+## 2. 폴더 구조
 
 ```
 2022113597KimMinseong/
@@ -22,8 +22,6 @@
 ├── config.py
 ├── datasets.py
 ├── env.yml
-├── evaluate_paraphrase.py
-├── evaluate_sonnet.py
 ├── evaluation.py
 ├── LICENSE
 ├── optimizer.py
@@ -61,8 +59,8 @@
 │   └── gpt2_layer.py
 ├── predictions/
 │   └── README
-├── sentiment_analysis/
-│   ├── Hybrid_model.py
+├── sentiment analysis/
+│   ├── Hybrid model.py
 │   ├── RoBERTa.py
 │   └── XLNet.py
 ```
