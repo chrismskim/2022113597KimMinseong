@@ -93,14 +93,11 @@
    - 실행 방법: `!python classifier.py --use_gpu`
    - 출력 예시:
      ```
-     Training Sentiment Classifier on sst...
-     ... (학습 로그)
-     Evaluating on sst...
-     ... (평가 결과)
-     Training Sentiment Classifier on cfimdb...
-     ... (학습 로그)
-     Evaluating on cfimdb...
-     ... (평가 결과)
+     eval: 100% 31/31 [00:01<00:00, 17.07it/s]
+     DONE DEV
+     eval: 100% 61/61 [00:03<00:00, 17.70it/s]
+     DONE Test
+     dev acc :: 0.~~
      ```
 
 ---
