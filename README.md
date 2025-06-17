@@ -6,6 +6,8 @@
 
 # 자연어처리 2025-1 지정주제 기말 프로젝트: GPT-2 구축
 
+## 보고서도 해당 레포지토리에 올려놓았습니다.
+
 ## 1. 실행 방법 (Google Colab 기준)
 
 1. `!git clone https://github.com/chrismskim/2022113597KimMinseong.git`
