@@ -111,8 +111,6 @@
   - 실행 방법: `!python paraphrase_detection.py --use_gpu`
 - sonnet_generation_basic.py: 소네트 생성 수행
   - 실행 방법: `!python sonnet_generation_basic.py --use_gpu`
-- sonnet_generation_Lora_Peft.py: Lora 기반 소네트 생성 (확장)
-  - 실행 방법: `!python sonnet_generation_Lora_Peft.py --use_gpu`
 
 ---
 
