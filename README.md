@@ -61,11 +61,15 @@
 │   └── gpt2_layer.py
 ├── predictions/
 │   └── README
+├── sentiment_analysis/
+│   ├── Hybrid_model.py
+│   ├── RoBERTa.py
+│   └── XLNet.py
 ```
 
 ---
 
-## 3. Part 1 실행 방법 (테스트 결과 예시 포함)
+## 3. Part 1
 
 1. optimizer.py 구현을 테스트
 
@@ -101,7 +105,7 @@
 
 ---
 
-## 4. Part 2 실행 방법
+## 4. Part 2
 
 - paraphrase_detection.py: 패러프레이즈 탐지 수행
   - 실행 방법: `!python paraphrase_detection.py --use_gpu`
@@ -115,4 +119,45 @@
 ## 5. 기능 확장 TEST
 
 - Sonnet_Lora: `sonnet_generation_Lora_Peft.py` 실행
-- 승민이꺼: (관련 파일/설명 추가)
+
+  - 실행 방법: `python sonnet_generation_Lora_Peft.py --use_gpu`
+  - 출력 예시: (소네트 생성 결과 및 평가 로그)
+
+- 감성분석 하이브리드/단일모델:
+  - RoBERTa.py (단일 RoBERTa)
+    - 실행 방법: `python sentiment_analysis/RoBERTa.py`
+    - 출력 예시:
+      ```
+      Using device: cuda
+      [Epoch 1/5] Train Loss: ..., Test Loss: ..., Accuracy: ...
+      ...
+      classification_report
+      ...
+      ```
+  - XLNet.py (단일 XLNet)
+    - 실행 방법: `python sentiment_analysis/XLNet.py`
+    - 출력 예시:
+      ```
+      Using device: cuda
+      [Epoch 1/5] Train Loss: ..., Test Loss: ..., Accuracy: ...
+      ...
+      classification_report
+      ...
+      ```
+  - Hybrid_model.py (RoBERTa + XLNet 앙상블)
+    - 실행 방법: `python sentiment_analysis/Hybrid_model.py`
+    - 출력 예시:
+      ```
+      Device: cuda
+      Training ROBERTA
+      ROBERTA Epoch 1: ...
+      ...
+      Training XLNET
+      XLNET Epoch 1: ...
+      ...
+      Best Weights: {'roberta': 0.6, 'xlnet': 0.4}
+      Final Train (5k)  -> Loss ... | Acc ...
+      Final Test        -> Loss ... | Acc ...
+      Classification Report:
+       ...
+      ```
