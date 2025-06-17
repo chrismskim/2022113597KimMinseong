@@ -103,9 +103,31 @@
 ## 4. Part 2
 
 - paraphrase_detection.py: 패러프레이즈 탐지 수행
+
   - 실행 방법: `!python paraphrase_detection.py --use_gpu`
+  - 출력 예시"
+
+    ```
+    Epoch 7: train loss :: 0.084, dev acc :: 0.896 (patience 2/4)
+    train-8: 100% 35376/35376 [32:26<00:00, 18.18it/s]
+    eval: 100% 5054/5054 [01:11<00:00, 70.25it/s]
+    Epoch 8: train loss :: 0.070, dev acc :: 0.894 (patience 3/4)
+    train-9: 100% 35376/35376 [32:46<00:00, 17.99it/s]
+    eval: 100% 5054/5054 [01:14<00:00, 67.90it/s]
+    Epoch 9: train loss :: 0.059, dev acc :: 0.895 (patience 4/4)
+    Early stopping triggered at epoch 9!
+
+    Loaded 40429 train examples from data/quora-dev.csv
+    eval: 100%|██████████| 5054/5054 [01:20<00:00, 63.00it/s]
+    Dev accuracy: 0.8966, F1 score: 0.8896
+    ```
+
 - sonnet_generation_basic.py: 소네트 생성 수행
   - 실행 방법: `!python sonnet_generation_basic.py --use_gpu`
+  - 출력 예시:
+    ```
+    CHRF score: 26.2012
+    ```
 
 ---
 
@@ -114,7 +136,10 @@
 - Sonnet_Lora:
 
   - 실행 방법: `!python sonnet_generation_Lora_Peft.py --use_gpu`
-  - 출력 예시: (소네트 생성 결과 및 평가 로그)
+  - 출력 예시:
+    ```
+    CHRF score: 38.9614
+    ```
 
 - 감성분석 하이브리드/단일모델:
   - RoBERTa.py (단일 RoBERTa)
