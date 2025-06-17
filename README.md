@@ -142,8 +142,9 @@
     ```
 
 - 감성분석 하이브리드/단일모델:
+  폴더 이동: ` %cd sentiment_analysis`
   - RoBERTa.py (단일 RoBERTa)
-    - 실행 방법: `!python sentiment_analysis/RoBERTa.py --use_gpu`
+    - 실행 방법: `!python RoBERTa.py --use_gpu`
     - 출력 예시:
       ```
       Using device: cuda
@@ -153,7 +154,7 @@
       ...
       ```
   - XLNet.py (단일 XLNet)
-    - 실행 방법: `!python sentiment_analysis/XLNet.py --use_gpu`
+    - 실행 방법: `!python XLNet.py --use_gpu`
     - 출력 예시:
       ```
       Using device: cuda
@@ -163,7 +164,7 @@
       ...
       ```
   - Hybrid_model.py (RoBERTa + XLNet 앙상블)
-    - 실행 방법: `!python sentiment_analysis/Hybrid_model.py --use_gpu`
+    - 실행 방법: `!Hybrid_model.py --use_gpu`
     - 출력 예시:
       ```
       Device: cuda
