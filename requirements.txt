@@ -12,3 +12,6 @@ scikit-learn
 einops
 sacrebleu
 numpy
+pandas
+matplotlib
+optuna
